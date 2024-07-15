@@ -1,0 +1,14 @@
+.ant-popover-inner {
+ padding: 0 !important;
+    /* padding: 12px; */
+}.pdf-container {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
+  }
+  
+  .pdf-iframe {
+    flex-grow: 1;
+    border: none;
+  }

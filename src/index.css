@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-black: #1b1b1b;
+  --color-white: #fefefa;
+  --color-grayLight: #b4b4b4;
+  --color-grayLight-opec: #dddddd3c;
+  --color-grayDark: #545454;
+  --color-grayDark-opec: #54545430;
+  --color-accent: #5155d1;
+  --color-accent-opec: #878adf65;
+  --font-inter: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--font-inter);
+  background-color: var(--color-white);
+}
+.ant-upload.ant-upload-drag {
+  width: 100%;
+}
+.ant-upload-list.ant-upload-list-picture {
+  width: 100%;
+}
+.input_box > .ant-upload-list.ant-upload-list-text {
+  width: 0%;
+  overflow-x: hidden;
+}
+
+.ant-upload-list.ant-upload-list-text {
+  max-height: 200px;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.3s;
+}
+.active_folder_tab {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border-radius: 0.5em;
+  padding: 0.5em;
+  transition: all 0.3s;
+}
+.new_folder_tab {
+  background-color: var(--color-grayDark-opec);
+  color: var(--color-white);
+  border-radius: 0.5em;
+}
+.folder_tab {
+  padding: 0.5em;
+  transition: all 0.3s;
+}
+.folder_tab:hover {
+  background-color: var(--color-grayDark-opec);
+}
+.folder_tabs::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--color-grayDark-opec);
+}
+
+.folder_tabs::-webkit-scrollbar {
+  width: 6px;
+  background-color: var(--color-grayDark-opec);
+}
+
+.folder_tabs::-webkit-scrollbar-thumb {
+  background-color: var(--color-grayDark);
+}
+.query_card {
+  background-color: var(--color-grayLight-opec);
+  padding:1em 1.3em;
+  border-radius: 10px;
+  border: 3px solid var(--color-accent-opec);
+
+}
+.req_card {
+  background-color: var(--color-accent-opec);
+  padding:1em 1.3em;
+  border-radius: 10px;
+  border: 2px solid var(--color-accent-opec);
+}
+/* .ant-upload-list-item-name{
+  color: #4dc5ff !important;
+} */
